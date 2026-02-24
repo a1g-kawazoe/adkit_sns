@@ -71,3 +71,24 @@
 - CLAUDE.md にワークフロー・タスク管理・コア原則を追加
 - Agent Team アーキテクチャ設計・実装（Lead / QA: Opus、Workers: Sonnet）
 - progress.md 作成・「使えるか / あと何が必要か」を整理
+- 新規 Git リポジトリとして初期コミット実施（.gitignore 整備済み）
+
+---
+
+## リモートリポジトリと繋ぐ手順
+
+GitHub / GitLab などで **空のリポジトリを新規作成**したあと、ターミナルで以下を実行してください。
+
+```bash
+cd /Users/kawazoeriku/Desktop/Adkit_SNS
+
+# リモートを追加（URL は実際のリポジトリに合わせて変更）
+git remote add origin https://github.com/あなたのユーザー名/Adkit_SNS.git
+
+# 初回プッシュ
+git branch -M main
+git push -u origin main
+```
+
+- **SSH を使う場合**: `https://...` の代わりに `git@github.com:あなたのユーザー名/Adkit_SNS.git` のように指定します。
+- リモート名を `origin` 以外にしたい場合は、`add origin` の `origin` を任意の名前に変更してください。
