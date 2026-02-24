@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# 環境変数・機密情報
+.env
+secrets/
+*.key
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ログ
+logs/
+*.log
+
+# データキャッシュ・出力（必要ならコミット対象から外す）
+data/cache/
+data/output/
+data/images/
